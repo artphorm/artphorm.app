@@ -8,8 +8,7 @@ $sql2 = 'CREATE TABLE `artphorm`.`posts` (`id` INT NOT NULL AUTO_INCREMENT , `bo
 $sql3 = 'INSERT INTO `posts` (`id`, `body`, `date`) VALUES (NULL, \'Hello, world!\', NOW());';
 
 try {
-  $conn = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8mb4', DB_USERNAME, DB_PASSWORD);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  include __DIR__ . '/../src/includes/db_connection.php';
   $conn->exec($sql1);
   $conn->exec($sql2);
   $conn->exec($sql3);
