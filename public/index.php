@@ -6,10 +6,16 @@ try {
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sql = 'SELECT `body` from `posts`';
   $result = $conn->query($sql);
-
-  while ($row = $result->fetch()) {
-    echo $row['body'];
+  foreach ($result as $row) {
+    $posts[] = $row['body'];
   }
+
+  ob_start();
+  include __DIR__ . '/../src/templates/posts.html.php';
+  $content = ob_get_clean();
+  $title = 'Posts';
 } catch (PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
+  $error = "Connection failed: " . $e->getMessage();
 }
+
+include __DIR__ . '/../src/templates/layout.html.php';
