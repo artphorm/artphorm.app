@@ -6,7 +6,7 @@ function posts_getAll(PDO $db)
     foreach ($result as $row) {
         $posts[] = $row;
     }
-    return $posts;
+    return $posts ?? null;
 }
 
 function posts_insert(PDO $db, string $body)

@@ -19,7 +19,11 @@
   <?php if (isset($error)) : ?>
     <p><?= $error ?></p>
   <?php endif; ?>
-  <?= $content ?>
+  <?php if (isset($content)) : ?>
+    <?= $content ?>
+  <?php else : ?>
+    <p>Nothing to see here.</p>
+  <?php endif; ?>
 </main>
 <footer>
   <p><small>&copy; <?= date('Y') ?> artphorm.app</small></p>
