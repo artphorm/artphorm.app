@@ -10,7 +10,7 @@ try {
         header('Location: /');
     }
     ob_start();
-    include __DIR__ . '/../src/templates/addpost.html.php';
+    include __DIR__ . '/../src/templates/postform.html.php';
     $content = ob_get_clean();
     $title = 'Add a Post';
 } catch (PDOException $e) {

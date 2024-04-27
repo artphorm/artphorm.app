@@ -1,3 +1,6 @@
+<?php if (isset($updated) && $updated == true) : ?>
+    <p>Post body updated.</p>
+<?php endif; ?>
 <form method="post" action="">
     <div><label for="body">Post Body</label></div>
     <div>

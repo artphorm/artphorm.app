@@ -2,6 +2,8 @@
 include_once __DIR__ . '/../src/includes/database.php';
 include_once __DIR__ . '/../src/includes/posts.php';
 
+$updated = false;
+
 try {
     $db = db_connect();
 
@@ -13,6 +15,7 @@ try {
 
         $body = htmlspecialchars($_POST['body'], ENT_QUOTES, 'UTF-8');
         posts_update($db, $id, $body);
+        $updated = true;
     }
 
     // Fetch the edited post
@@ -26,7 +29,7 @@ try {
     $post = posts_getById($db, $id);
 
     ob_start();
-    include __DIR__ . '/../src/templates/addpost.html.php';
+    include __DIR__ . '/../src/templates/postform.html.php';
     $content = ob_get_clean();
     $title = 'Edit Post.';
 } catch (PDOException $e) {
