@@ -1,13 +1,11 @@
 <?php
 include_once __DIR__ . '/../config.php';
+include_once __DIR__ . '/../src/includes/database.php';
+include_once __DIR__ . '/../src/includes/posts.php';
 
 try {
-  include __DIR__ . '/../src/includes/db_connection.php';
-  $sql = 'SELECT `body` from `posts`';
-  $result = $conn->query($sql);
-  foreach ($result as $row) {
-    $posts[] = $row['body'];
-  }
+  $db = db_connect();
+  $posts = posts_getAll($db);
 
   ob_start();
   include __DIR__ . '/../src/templates/posts.html.php';
