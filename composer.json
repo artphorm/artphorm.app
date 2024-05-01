@@ -1,0 +1,17 @@
+{
+    "name": "artphorm/artphorm.app",
+    "type": "project",
+    "license": "GPL3",
+    "authors": [
+        {
+            "name": "James Johnson",
+            "email": "jjohnson@artphorm.org"
+        }
+    ],
+    "scripts": {
+        "test": "./vendor/bin/phpunit tests"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "11"
+    }
+}
