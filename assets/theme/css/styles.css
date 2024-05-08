@@ -5,7 +5,7 @@
  * 2. Theme Variables
  * 3. Header
  * 4. Footer
- * 5. Content
+ * 5. Components
  * 6. Utility Classes
  */
 
@@ -56,7 +56,7 @@ img {
 /* Layout styles */
 
 .ap-banner,
-.ap-main-menu {
+.ap-menu-main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -70,7 +70,7 @@ img {
     height: 4rem;
 }
 
-.ap-main-menu {
+.ap-menu-main {
     height: 3rem;
 }
 
@@ -116,16 +116,12 @@ body {
     background-color: hsl(0, 0%, 99%);
 }
 
-.ap-main-banner {
+.ap-banner-app {
     background-color: hsl(0, 0%, 95%);
 }
 
-.ap-main-menu {
+.ap-menu-main {
     border-bottom: 1px hsl(0, 0%, 90%) solid;
-}
-
-.ap-footer {
-    border-top: 1px hsl(0, 0%, 90%) solid;
 }
 
 /* 
@@ -133,7 +129,7 @@ body {
  */
 
 .ap-footer {
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .ap-utility-menu {
@@ -165,16 +161,62 @@ body {
     }
 }
 
-/*
- * Content
- */
-
-.ap-main {
-    padding: 1rem;
+.ap-footer-app {
+    border-top: 1px hsl(0, 0%, 90%) solid;
 }
 
-.ap-sidebar {
-    padding: 1rem;
+/*
+ * *** Components ***
+ */
+
+/* Links */
+
+a {
+    color: rgb(19, 89, 186);
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(1, 47, 110);
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #000;
+}
+
+/* Buttons */
+
+.ap-button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 3rem;
+    padding: 0 1rem;
+}
+
+.ap-button-primary {
+    background-color: rgb(19, 89, 186);
+    border-radius: 8px;
+    color: white;
+}
+
+.ap-button-primary:hover {
+    background-color: rgb(1, 47, 110);
+    color: white;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+.ap-button-primary:active {
+    background-color: black;
+    color: white;
 }
 
 /*

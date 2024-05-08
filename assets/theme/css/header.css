@@ -5,7 +5,7 @@
 /* Layout styles */
 
 .ap-banner,
-.ap-main-menu {
+.ap-menu-main {
     align-items: center;
     display: flex;
     padding: 0 1rem;
@@ -15,7 +15,7 @@
     height: 4rem;
 }
 
-.ap-main-menu {
+.ap-menu-main {
     height: 3rem;
 }
 
@@ -57,14 +57,10 @@ body {
     background-color: hsl(0, 0%, 99%);
 }
 
-.ap-main-banner {
+.ap-banner-app {
     background-color: hsl(0, 0%, 95%);
 }
 
-.ap-main-menu {
+.ap-menu-main {
     border-bottom: 1px hsl(0, 0%, 90%) solid;
-}
-
-.ap-footer {
-    border-top: 1px hsl(0, 0%, 90%) solid;
 }

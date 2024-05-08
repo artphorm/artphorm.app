@@ -5,7 +5,7 @@
  * 2. Theme Variables
  * 3. Header
  * 4. Footer
- * 5. Content
+ * 5. Components
  * 6. Utility Classes
  */
 
@@ -13,5 +13,5 @@
 @import 'vars.css';
 @import 'header.css';
 @import 'footer.css';
-@import 'content.css';
+@import 'components.css';
 @import 'utility.css';

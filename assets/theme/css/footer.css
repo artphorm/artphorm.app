@@ -3,7 +3,7 @@
  */
 
 .ap-footer {
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .ap-utility-menu {
@@ -33,4 +33,8 @@
     .ap-utility-link {
         font-size: 0.875rem;
     }
+}
+
+.ap-footer-app {
+    border-top: 1px hsl(0, 0%, 90%) solid;
 }

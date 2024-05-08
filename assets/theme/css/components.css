@@ -1,0 +1,46 @@
+/*
+ * *** Components ***
+ */
+
+/* Links */
+
+a {
+    color: rgb(19, 89, 186);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(1, 47, 110);
+    text-decoration: underline;
+}
+
+a:active {
+    color: #000;
+}
+
+/* Buttons */
+
+.ap-button {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 3rem;
+    padding: 0 1rem;
+}
+
+.ap-button-primary {
+    background-color: rgb(19, 89, 186);
+    border-radius: 8px;
+    color: white;
+}
+
+.ap-button-primary:hover {
+    background-color: rgb(1, 47, 110);
+    color: white;
+    text-decoration: none;
+}
+
+.ap-button-primary:active {
+    background-color: black;
+    color: white;
+}
