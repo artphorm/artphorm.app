@@ -42,6 +42,12 @@
     margin-right: 0;
 }
 
+.ap-menu-link {
+    align-items: center;
+    display: flex;
+    height: 3rem;
+}
+
 @media screen and (min-width: 768px) {
     .ap-logotype {
         display: inline;
@@ -63,4 +69,13 @@ body {
 
 .ap-menu-main {
     border-bottom: 1px hsl(0, 0%, 90%) solid;
+}
+
+.ap-menu-link-main {
+    border-bottom: 4px transparent solid;
+}
+
+.ap-menu-link-main:hover {
+    border-bottom: 4px rgb(19, 89, 186) solid;
+    text-decoration: none;
 }
