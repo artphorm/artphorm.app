@@ -1,0 +1,174 @@
+/*
+ * Contents
+ * 
+ * 1. Reset
+ * 2. Theme Variables
+ * 3. Header
+ * 4. Footer
+ * 5. Content
+ * 6. Utility Classes
+ */
+
+/*
+ * Reset
+ */
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/*
+ * Theme variables
+ */
+
+:root {
+    --color-bg: white;
+    --color-bg-dark: lightgray;
+    --color-border: lightgray;
+    --color-text: black;
+    --color-logo: black;
+    --color-menu-text: dimgray;
+    --color-menu-text-hover: darkblue;
+    --color-menu-text-active: black;
+    --color-menu-underline: royalblue;
+    --color-btn: royalblue;
+    --color-btn-hover: blue;
+    --color-btn-active: darkblue;
+}
+
+/*
+ * Header 
+ */
+
+.ap-page-banner,
+.ap-main-menu {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 1rem;
+}
+
+.ap-page-banner {
+    height: 4rem;
+}
+
+.ap-main-menu {
+    height: 3rem;
+}
+
+.ap-login-menu {
+    margin-left: auto;
+}
+
+.ap-logotype {
+    display: none;
+}
+
+.ap-menu {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+}
+
+.ap-menu-item {
+    display: block;
+    margin-right: 1rem;
+}
+
+.ap-menu-item:last-child {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .ap-logotype {
+        display: inline;
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-left: 0.5rem;
+    }
+}
+
+/* 
+ * Footer
+ */
+
+.ap-footer {
+    margin: 1rem;
+}
+
+.ap-utility-menu {
+    list-style: none;
+}
+
+.ap-utility-item {
+    display: inline-block;
+}
+
+.ap-utility-item::after {
+    content: " | ";
+}
+
+.ap-utility-item:last-child::after {
+    content: "";
+}
+
+.ap-copyright,
+.ap-utility-link {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .ap-copyright,
+    .ap-utility-link {
+        font-size: 0.875rem;
+    }
+}
+
+/*
+ * Content
+ */
+
+.ap-main {
+    padding: 1rem;
+}
+
+.ap-sidebar {
+    padding: 1rem;
+}
+
+/*
+ * Utility Classes
+ */
+
+.ap-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

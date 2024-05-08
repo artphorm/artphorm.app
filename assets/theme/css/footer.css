@@ -1,0 +1,36 @@
+/* 
+ * Footer
+ */
+
+.ap-footer {
+    margin: 1rem;
+}
+
+.ap-utility-menu {
+    list-style: none;
+}
+
+.ap-utility-item {
+    display: inline-block;
+}
+
+.ap-utility-item::after {
+    content: " | ";
+}
+
+.ap-utility-item:last-child::after {
+    content: "";
+}
+
+.ap-copyright,
+.ap-utility-link {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .ap-copyright,
+    .ap-utility-link {
+        font-size: 0.875rem;
+    }
+}

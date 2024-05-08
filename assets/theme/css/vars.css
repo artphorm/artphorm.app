@@ -1,0 +1,18 @@
+/*
+ * Theme variables
+ */
+
+:root {
+    --color-bg: white;
+    --color-bg-dark: lightgray;
+    --color-border: lightgray;
+    --color-text: black;
+    --color-logo: black;
+    --color-menu-text: dimgray;
+    --color-menu-text-hover: darkblue;
+    --color-menu-text-active: black;
+    --color-menu-underline: royalblue;
+    --color-btn: royalblue;
+    --color-btn-hover: blue;
+    --color-btn-active: darkblue;
+}

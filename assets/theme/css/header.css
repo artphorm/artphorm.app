@@ -1,0 +1,50 @@
+/*
+ * Header 
+ */
+
+.ap-page-banner,
+.ap-main-menu {
+    align-items: center;
+    display: flex;
+    padding: 0 1rem;
+}
+
+.ap-page-banner {
+    height: 4rem;
+}
+
+.ap-main-menu {
+    height: 3rem;
+}
+
+.ap-login-menu {
+    margin-left: auto;
+}
+
+.ap-logotype {
+    display: none;
+}
+
+.ap-menu {
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+.ap-menu-item {
+    display: block;
+    margin-right: 1rem;
+}
+
+.ap-menu-item:last-child {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .ap-logotype {
+        display: inline;
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-left: 0.5rem;
+    }
+}
