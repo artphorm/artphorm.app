@@ -1,15 +1,17 @@
 /*
- * Header 
+ * *** Header ***
  */
 
-.ap-page-banner,
+/* Layout styles */
+
+.ap-banner,
 .ap-main-menu {
     align-items: center;
     display: flex;
     padding: 0 1rem;
 }
 
-.ap-page-banner {
+.ap-banner {
     height: 4rem;
 }
 
@@ -47,4 +49,22 @@
         font-weight: normal;
         margin-left: 0.5rem;
     }
+}
+
+/* Skin */
+
+body {
+    background-color: hsl(0, 0%, 99%);
+}
+
+.ap-main-banner {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.ap-main-menu {
+    border-bottom: 1px hsl(0, 0%, 90%) solid;
+}
+
+.ap-footer {
+    border-top: 1px hsl(0, 0%, 90%) solid;
 }
