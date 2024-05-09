@@ -52,6 +52,8 @@ h6 {
     font-weight: bold;
 }
 
+/* Layout */
+
 @media screen and (min-width: 1024px) {
     .ap-container {
         display: grid;
