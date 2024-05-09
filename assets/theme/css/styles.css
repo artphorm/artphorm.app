@@ -11,7 +11,7 @@
  */
 
 /*
- * Reset
+ * *** Reset ***
  */
 
 * {
@@ -33,7 +33,7 @@ img {
 }
 
 /*
- * Theme variables
+ * *** Theme variables ***
  */
 
 :root {
@@ -201,7 +201,7 @@ h6 {
 }
 
 /* 
- * Footer
+ * *** Footer ***
  */
 
 .ap-footer {
@@ -291,8 +291,10 @@ h6 {
 }
 
 /*
- * Utility Classes
+ * *** Utility Classes ***
  */
+
+/* Visible only to screen reader */
 
 .ap-sr-only {
     position: absolute;

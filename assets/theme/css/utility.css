@@ -1,7 +1,8 @@
 /*
- * Utility Classes
+ * *** Utility Classes ***
  */
 
+/* Visible only to screen reader */
 .ap-sr-only {
     position: absolute;
     width: 1px;
