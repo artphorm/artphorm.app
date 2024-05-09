@@ -82,4 +82,5 @@
 .ap-menu-link-main:active,
 .ap-menu-link-main.active {
     color: var(--ap-color-menu-link-active);
+    border-bottom: 4px var(--ap-color-menu-link-active) solid;
 }

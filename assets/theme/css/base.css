@@ -29,3 +29,33 @@ h5,
 h6 {
     color: var(--ap-color-text);
 }
+
+.ap-heading-sm {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 0.25rem;
+}
+
+.ap-heading-md {
+    font-size: 1.125rem;
+    font-weight: normal;
+    margin-bottom: 0.25rem;
+}
+
+.ap-heading-lg {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 0.25rem;
+}
+
+.ap-bold {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+    .ap-container {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 200px auto 300px;
+    }
+}

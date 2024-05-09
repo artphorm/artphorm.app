@@ -34,3 +34,48 @@
         height: 2rem;
     }
 }
+
+/* Menus */
+
+.ap-menu-list {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.ap-menu-galleries {
+    border-bottom: 1px var(--ap-color-border) solid;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .ap-menu-galleries {
+        border-bottom: none;
+        border-right: 1px var(--ap-color-border) solid;
+    }
+}
+
+/* Sections/Cards */
+
+.ap-card {
+    margin: 1rem;
+}
+
+.ap-card-header {
+    align-items: center;
+    display: flex;
+    height: 3rem;
+    padding: 0 1rem;
+}
+
+.ap-card-body {
+    padding: 1rem;
+}
+
+.ap-card-primary {
+    border: 1px var(--ap-color-border) solid;
+    border-radius: 4px;
+}
+
+.ap-card-header-primary {
+    background-color: var(--ap-color-fg);
+}

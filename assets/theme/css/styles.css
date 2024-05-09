@@ -93,6 +93,39 @@ h6 {
     color: var(--ap-color-text);
 }
 
+.ap-heading-sm {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 0.25rem;
+}
+
+.ap-heading-md {
+    font-size: 1.125rem;
+    font-weight: normal;
+    margin-bottom: 0.25rem;
+}
+
+.ap-heading-lg {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 0.25rem;
+}
+
+.ap-bold {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+    .ap-container {
+        display: -ms-grid;
+        display: grid;
+        grid-gap: 1rem;
+        gap: 1rem;
+        -ms-grid-columns: 200px 1rem auto 1rem 300px;
+        grid-template-columns: 200px auto 300px;
+    }
+}
+
 /*
  * *** Header ***
  */
@@ -198,6 +231,8 @@ h6 {
 .ap-menu-link-main.active {
     color: #0D0D0D;
     color: var(--ap-color-menu-link-active);
+    border-bottom: 4px #0D0D0D solid;
+    border-bottom: 4px var(--ap-color-menu-link-active) solid;
 }
 
 /* 
@@ -288,6 +323,64 @@ h6 {
     .ap-button {
         height: 2rem;
     }
+}
+
+/* Menus */
+
+.ap-menu-list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.ap-menu-galleries {
+    border-bottom: 1px #CACBCC solid;
+    border-bottom: 1px var(--ap-color-border) solid;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .ap-menu-galleries {
+        border-bottom: none;
+        border-right: 1px #CACBCC solid;
+        border-right: 1px var(--ap-color-border) solid;
+    }
+}
+
+/* Sections/Cards */
+
+.ap-card {
+    margin: 1rem;
+}
+
+.ap-card-header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 3rem;
+    padding: 0 1rem;
+}
+
+.ap-card-body {
+    padding: 1rem;
+}
+
+.ap-card-primary {
+    border: 1px #CACBCC solid;
+    border: 1px var(--ap-color-border) solid;
+    border-radius: 4px;
+}
+
+.ap-card-header-primary {
+    background-color: #E4E5E6;
+    background-color: var(--ap-color-fg);
 }
 
 /*

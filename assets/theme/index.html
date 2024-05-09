@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <header class="ap-header">
-        <div class="ap-header__banner">
-            <svg class="ap-header__logo" xmlns="http://www.w3.org/2000/svg" width="51.414" height="32.103"
+    <header>
+        <section class="ap-banner ap-banner-app">
+            <svg class="ap-logo ap-logo-app" xmlns="http://www.w3.org/2000/svg" width="51.414" height="32.103"
                 viewBox="0 0 51.414 32.103">
                 <g>
                     <path
@@ -21,76 +21,67 @@
                         d="M22.917,26.954V13.177A14.235,14.235,0,0,1,24.548,6.55a13.168,13.168,0,1,0-4.782,18.036l.859-.5v1.719l2.292,1.146Zm-9.74-6.329a7.448,7.448,0,1,1,7.448-7.448A7.458,7.458,0,0,1,13.177,20.625Z" />
                 </g>
             </svg>
-            <h1 class="ap-header__logotype">Artphorm</h1>
-            <nav class="ap-header__member-menu">
-                <h2 class="ap-sr-only">Member Menu</h2>
-                <ul class="ap-header__menu-list">
-                    <li><a href="#" class="ap-header__login-btn">Login</a></li>
+            <h1 class="ap-logotype ap-logo-app">Artphorm</h1>
+            <nav class="ap-login-menu">
+                <h2 class="ap-sr-only">Login Menu</h2>
+                <ul class="ap-menu">
+                    <li class="ap-menu-item"><a class="ap-button ap-button-primary" href="#">Log In</a></li>
+                    <li class="ap-menu-item"><a href="#">Register</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="ap-header__menu">
-            <nav>
-                <h2 class="ap-sr-only">Main Menu</h2>
-                <ul class="ap-header__menu-list">
-                    <li class="ap-header__menu-item"><a class="ap-header__menu-link" href="#">Home</a></li>
-                    <li class="ap-header__menu-item"><a class="ap-header__menu-link" href="#">Gallery</a></li>
-                    <li class="ap-header__menu-item"><a class="ap-header__menu-link" href="#">Members</a></li>
-                    <li class="ap-header__menu-item"><a class="ap-header__menu-link" href="#">News</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="ap-main">
-        <h2 class="ap-sr-only">Home</h2>
-        <section>
-            <h2>Latest Posts</h2>
-            <article>
-                <img src="https://picsum.photos/600" alt="" />
-                <h3>Image Title</h3>
-                <p>Author Username</p>
-            </article>
         </section>
-    </main>
-    <aside class="ap-sidebar">
-        <section>
-            <h2>News</h2>
-            <article>
-                <h3>Article Title</h3>
-                <p>Article body</p>
-                <p><a href="#">Read more &raquo;</a></p>
-            </article>
-        </section>
-        <section>
-            <h2>Newest Members</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Username</th>
-                        <th>Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Name123</td>
-                        <td><time datetime="2024-05-02">5/2/2024</time></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </aside>
-    <footer class="ap-footer">
-        <nav class="ap-footer__menu">
-            <h2 class="ap-sr-only">Footer Menu</h2>
-            <ul class="ap-footer__menu-list">
-                <li class="ap-footer__menu-item"><a class="ap-footer__menu-link" href="#">Rules</a></li>
-                <li class="ap-footer__menu-item"><a class="ap-footer__menu-link" href=" #">About</a></li>
-                <li class="ap-footer__menu-item"><a class="ap-footer__menu-link" href=" #">Contact</a></li>
-                <li class="ap-footer__menu-item"><a class="ap-footer__menu-link" href=" #">Terms</a></li>
-                <li class="ap-footer__menu-item"><a class="ap-footer__menu-link" href=" #">Privacy</a></li>
+        <nav class="ap-menu-main">
+            <h2 class="ap-sr-only">Main Menu</h2>
+            <ul class="ap-menu">
+                <li class="ap-menu-item"><a class="ap-menu-link ap-menu-link-main active" href="#">Home</a></li>
+                <li class="ap-menu-item"><a class="ap-menu-link ap-menu-link-main" href="#">Members</a></li>
+                <li class="ap-menu-item"><a class="ap-menu-link ap-menu-link-main" href="#">News</a></li>
+                <li class="ap-menu-item"><a class="ap-menu-link ap-menu-link-main" href="#">FAQ</a></li>
             </ul>
         </nav>
-        <p class="ap-footer__copyright"><small>&copy; <time datetime="2024">2024</time> artphorm.app</small></p>
+    </header>
+
+    <div class="ap-container">
+        <nav class="ap-menu-galleries">
+            <h2 class="ap-heading-sm ap-bold">Galleries</h2>
+            <menu class="ap-menu ap-menu-list">
+                <li class="ap-menu-list-item"><a href="#">Paintings</a></li>
+                <li class="ap-menu-list-item"><a href="#">Drawings</a></li>
+            </menu>
+        </nav>
+        <main>
+            <section>
+                <h2 class="ap-heading-lg">Latest Art</h2>
+            </section>
+            <section>
+                <header>
+                    <h2 class="ap-heading-md">Paintings</h2>
+                </header>
+            </section>
+        </main>
+        <aside>
+            <section class="ap-card ap-card-primary">
+                <header class="ap-card-header ap-card-header-primary">
+                    <h2 class="ap-heading-md">News & Announcements</h2>
+                </header>
+                <div class="ap-card-body">
+                    <p>Some content</p>
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <footer class="ap-footer ap-footer-app">
+        <nav>
+            <h2 class="ap-sr-only">Utility Menu</h2>
+            <ul class="ap-utility-menu">
+                <li class="ap-utility-item"><a class="ap-utility-link" href="#">About</a></li>
+                <li class="ap-utility-item"><a class="ap-utility-link" href="#">Contact</a></li>
+                <li class="ap-utility-item"><a class="ap-utility-link" href="#">Terms</a></li>
+                <li class="ap-utility-item"><a class="ap-utility-link" href="#">Privacy</a></li>
+            </ul>
+        </nav>
+        <small class="ap-copyright">&copy; <time datetime="2024">2024</time> artphorm.app</small>
     </footer>
 </body>
 
