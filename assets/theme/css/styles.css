@@ -354,7 +354,7 @@ h6 {
 /* Sections/Cards */
 
 .ap-card {
-    margin: 1rem;
+    margin: 1rem 0 0 0;
 }
 
 .ap-card-header {
