@@ -44,3 +44,9 @@ a:active {
     background-color: black;
     color: white;
 }
+
+@media screen and (min-width: 1024px) {
+    .ap-button {
+        height: 2rem;
+    }
+}
