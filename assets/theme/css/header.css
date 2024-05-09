@@ -2,8 +2,6 @@
  * *** Header ***
  */
 
-/* Layout styles */
-
 .ap-banner,
 .ap-menu-main {
     align-items: center;
@@ -57,25 +55,31 @@
     }
 }
 
-/* Skin */
-
-body {
-    background-color: hsl(0, 0%, 99%);
+.ap-banner-app {
+    background-color: var(--ap-color-fg);
 }
 
-.ap-banner-app {
-    background-color: hsl(0, 0%, 95%);
+.ap-logo-app {
+    color: var(--ap-color-logo);
+    fill: var(--ap-color-logo);
 }
 
 .ap-menu-main {
-    border-bottom: 1px hsl(0, 0%, 90%) solid;
+    border-bottom: 1px var(--ap-color-border) solid;
 }
 
 .ap-menu-link-main {
+    color: var(--ap-color-menu-link);
     border-bottom: 4px transparent solid;
 }
 
 .ap-menu-link-main:hover {
-    border-bottom: 4px rgb(19, 89, 186) solid;
+    color: var(--ap-color-menu-link-hover);
+    border-bottom: 4px var(--ap-color-link) solid;
     text-decoration: none;
+}
+
+.ap-menu-link-main:active,
+.ap-menu-link-main.active {
+    color: var(--ap-color-menu-link-active);
 }

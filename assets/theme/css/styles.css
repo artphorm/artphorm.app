@@ -3,10 +3,11 @@
  * 
  * 1. Reset
  * 2. Theme Variables
- * 3. Header
- * 4. Footer
- * 5. Components
- * 6. Utility Classes
+ * 3. Base Styles
+ * 4. Header
+ * 5. Footer
+ * 6. Components
+ * 7. Utility Classes
  */
 
 /*
@@ -36,25 +37,65 @@ img {
  */
 
 :root {
-    --color-bg: white;
-    --color-bg-dark: lightgray;
-    --color-border: lightgray;
-    --color-text: black;
-    --color-logo: black;
-    --color-menu-text: dimgray;
-    --color-menu-text-hover: darkblue;
-    --color-menu-text-active: black;
-    --color-menu-underline: royalblue;
-    --color-btn: royalblue;
-    --color-btn-hover: blue;
-    --color-btn-active: darkblue;
+    --ap-color-bg: #FAFBFC;
+    --ap-color-fg: #E4E5E6;
+    --ap-color-text: #0D0D0D;
+    --ap-color-logo: var(--ap-color-text);
+    --ap-color-border: #CACBCC;
+    --ap-color-link: #1571CC;
+    --ap-color-link-hover: #0D4478;
+    --ap-color-link-active: #05172A;
+    --ap-color-menu-link: #656666;
+    --ap-color-menu-link-hover: var(--ap-color-link);
+    --ap-color-menu-link-active: var(--ap-color-text);
+    --ap-color-btn: var(--ap-color-link);
+    --ap-color-btn-hover: var(--ap-color-link-hover);
+    --ap-color-btn-active: var(--ap-color-link-active);
+    --ap-color-btn-text: #FFF;
+}
+
+/*
+ * *** Base Styles ***
+ */
+
+body {
+    background-color: #FAFBFC;
+    background-color: var(--ap-color-bg);
+}
+
+a {
+    color: #1571CC;
+    color: var(--ap-color-link);
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0D4478;
+    color: var(--ap-color-link-hover);
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #05172A;
+    color: var(--ap-color-link-active);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #0D0D0D;
+    color: var(--ap-color-text);
 }
 
 /*
  * *** Header ***
  */
-
-/* Layout styles */
 
 .ap-banner,
 .ap-menu-main {
@@ -121,28 +162,42 @@ img {
     }
 }
 
-/* Skin */
-
-body {
-    background-color: hsl(0, 0%, 99%);
+.ap-banner-app {
+    background-color: #E4E5E6;
+    background-color: var(--ap-color-fg);
 }
 
-.ap-banner-app {
-    background-color: hsl(0, 0%, 95%);
+.ap-logo-app {
+    color: #0D0D0D;
+    color: var(--ap-color-logo);
+    fill: #0D0D0D;
+    fill: var(--ap-color-logo);
 }
 
 .ap-menu-main {
-    border-bottom: 1px hsl(0, 0%, 90%) solid;
+    border-bottom: 1px #CACBCC solid;
+    border-bottom: 1px var(--ap-color-border) solid;
 }
 
 .ap-menu-link-main {
+    color: #656666;
+    color: var(--ap-color-menu-link);
     border-bottom: 4px transparent solid;
 }
 
 .ap-menu-link-main:hover {
-    border-bottom: 4px rgb(19, 89, 186) solid;
+    color: #1571CC;
+    color: var(--ap-color-menu-link-hover);
+    border-bottom: 4px #1571CC solid;
+    border-bottom: 4px var(--ap-color-link) solid;
     -webkit-text-decoration: none;
     text-decoration: none;
+}
+
+.ap-menu-link-main:active,
+.ap-menu-link-main.active {
+    color: #0D0D0D;
+    color: var(--ap-color-menu-link-active);
 }
 
 /* 
@@ -183,30 +238,13 @@ body {
 }
 
 .ap-footer-app {
-    border-top: 1px hsl(0, 0%, 90%) solid;
+    border-top: 1px #CACBCC solid;
+    border-top: 1px var(--ap-color-border) solid;
 }
 
 /*
  * *** Components ***
  */
-
-/* Links */
-
-a {
-    color: rgb(19, 89, 186);
-    -webkit-text-decoration: none;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(1, 47, 110);
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
-}
-
-a:active {
-    color: #000;
-}
 
 /* Buttons */
 
@@ -223,21 +261,27 @@ a:active {
 }
 
 .ap-button-primary {
-    background-color: rgb(19, 89, 186);
+    background-color: #1571CC;
+    background-color: var(--ap-color-btn);
     border-radius: 8px;
-    color: white;
+    color: #FFF;
+    color: var(--ap-color-btn-text);
 }
 
 .ap-button-primary:hover {
-    background-color: rgb(1, 47, 110);
-    color: white;
+    background-color: #0D4478;
+    background-color: var(--ap-color-btn-hover);
+    color: #FFF;
+    color: var(--ap-color-btn-text);
     -webkit-text-decoration: none;
     text-decoration: none;
 }
 
 .ap-button-primary:active {
-    background-color: black;
-    color: white;
+    background-color: #05172A;
+    background-color: var(--ap-color-btn-active);
+    color: #FFF;
+    color: var(--ap-color-btn-text);
 }
 
 @media screen and (min-width: 1024px) {

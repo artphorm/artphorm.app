@@ -36,5 +36,5 @@
 }
 
 .ap-footer-app {
-    border-top: 1px hsl(0, 0%, 90%) solid;
+    border-top: 1px var(--ap-color-border) solid;
 }

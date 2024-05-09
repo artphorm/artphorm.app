@@ -2,22 +2,6 @@
  * *** Components ***
  */
 
-/* Links */
-
-a {
-    color: rgb(19, 89, 186);
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(1, 47, 110);
-    text-decoration: underline;
-}
-
-a:active {
-    color: #000;
-}
-
 /* Buttons */
 
 .ap-button {
@@ -29,20 +13,20 @@ a:active {
 }
 
 .ap-button-primary {
-    background-color: rgb(19, 89, 186);
+    background-color: var(--ap-color-btn);
     border-radius: 8px;
-    color: white;
+    color: var(--ap-color-btn-text);
 }
 
 .ap-button-primary:hover {
-    background-color: rgb(1, 47, 110);
-    color: white;
+    background-color: var(--ap-color-btn-hover);
+    color: var(--ap-color-btn-text);
     text-decoration: none;
 }
 
 .ap-button-primary:active {
-    background-color: black;
-    color: white;
+    background-color: var(--ap-color-btn-active);
+    color: var(--ap-color-btn-text);
 }
 
 @media screen and (min-width: 1024px) {

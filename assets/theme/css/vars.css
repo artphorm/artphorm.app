@@ -3,16 +3,19 @@
  */
 
 :root {
-    --color-bg: white;
-    --color-bg-dark: lightgray;
-    --color-border: lightgray;
-    --color-text: black;
-    --color-logo: black;
-    --color-menu-text: dimgray;
-    --color-menu-text-hover: darkblue;
-    --color-menu-text-active: black;
-    --color-menu-underline: royalblue;
-    --color-btn: royalblue;
-    --color-btn-hover: blue;
-    --color-btn-active: darkblue;
+    --ap-color-bg: #FAFBFC;
+    --ap-color-fg: #E4E5E6;
+    --ap-color-text: #0D0D0D;
+    --ap-color-logo: var(--ap-color-text);
+    --ap-color-border: #CACBCC;
+    --ap-color-link: #1571CC;
+    --ap-color-link-hover: #0D4478;
+    --ap-color-link-active: #05172A;
+    --ap-color-menu-link: #656666;
+    --ap-color-menu-link-hover: var(--ap-color-link);
+    --ap-color-menu-link-active: var(--ap-color-text);
+    --ap-color-btn: var(--ap-color-link);
+    --ap-color-btn-hover: var(--ap-color-link-hover);
+    --ap-color-btn-active: var(--ap-color-link-active);
+    --ap-color-btn-text: #FFF;
 }

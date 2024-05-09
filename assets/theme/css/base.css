@@ -1,0 +1,31 @@
+/*
+ * *** Base Styles ***
+ */
+
+body {
+    background-color: var(--ap-color-bg);
+}
+
+a {
+    color: var(--ap-color-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--ap-color-link-hover);
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--ap-color-link-active);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--ap-color-text);
+}
